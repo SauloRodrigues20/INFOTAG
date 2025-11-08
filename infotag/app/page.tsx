@@ -100,80 +100,63 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-500 to-cyan-500 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-red-600 via-red-500 to-orange-500 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="container mx-auto px-4 py-8 max-w-5xl relative z-10">
-        {/* Header */}
-        <header className="text-center mb-12 animate-fade-in">
-          <div className="inline-block bg-white/95 backdrop-blur-lg rounded-3xl shadow-2xl p-8 mb-6 border-4 border-white/20">
-            <div className="flex items-center justify-center gap-4 mb-3">
-              <div className="text-6xl animate-bounce">🏥</div>
-              <h1 className="text-6xl font-black bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-                INFOTAG
+      <div className="container mx-auto px-3 py-4 md:py-8 max-w-4xl relative z-10">
+        {/* Header - Simplified for Emergency */}
+        <header className="text-center mb-4 md:mb-8 animate-fade-in">
+          <div className="inline-block bg-white rounded-2xl shadow-2xl p-4 md:p-6 border-4 border-red-300">
+            <div className="flex items-center justify-center gap-2 md:gap-3 mb-2">
+              <div className="text-4xl md:text-5xl animate-pulse">🚨</div>
+              <h1 className="text-3xl md:text-5xl font-black text-red-600">
+                INFOTAG UPA
               </h1>
             </div>
-            <p className="text-gray-700 text-xl font-semibold">
-              Sistema de Identificação Médica de Emergência
+            <p className="text-gray-800 text-sm md:text-lg font-bold">
+              Sistema de Emergência Médica
             </p>
-            <div className="flex items-center justify-center gap-2 mt-3 text-sm text-gray-600">
-              <span className="animate-pulse">⚡</span>
-              <span>Acesso Rápido por NFC</span>
-              <span className="animate-pulse">⚡</span>
-            </div>
           </div>
         </header>
 
-        <main className="space-y-6">
-          {/* Emergency Banner */}
-          <div className="bg-gradient-to-r from-red-600 to-red-500 text-white rounded-2xl shadow-2xl p-8 text-center transform hover:scale-105 transition-all duration-300 border-4 border-red-400/30">
-            <h2 className="text-4xl font-black mb-3 flex items-center justify-center gap-3">
-              <span className="animate-pulse">⚠️</span>
-              ACESSO EMERGENCIAL
-              <span className="animate-pulse">⚠️</span>
-            </h2>
-            <p className="text-xl font-semibold">
-              Sistema para uso exclusivo de profissionais de saúde
-            </p>
-          </div>
-
-          {/* NFC Scanner Section */}
+        <main className="space-y-3 md:space-y-4">
+          {/* NFC Scanner Section - Priority */}
           {isNFCSupported && (
-            <div className="bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border-4 border-white/30">
-              <div className="text-center mb-6">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mb-4 animate-pulse">
-                  <span className="text-4xl">📱</span>
+            <div className="bg-white rounded-xl shadow-2xl p-4 md:p-6 border-4 border-purple-300">
+              <div className="text-center mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 bg-purple-600 rounded-full mb-3 animate-pulse shadow-xl">
+                  <span className="text-3xl md:text-4xl">📱</span>
                 </div>
-                <h3 className="text-3xl font-black text-gray-800 mb-2">
-                  Leitura por NFC
+                <h3 className="text-xl md:text-2xl font-black text-gray-800 mb-1">
+                  LEITURA NFC
                 </h3>
-                <p className="text-gray-600 text-lg">
-                  Aproxime a pulseira do seu celular
+                <p className="text-gray-600 text-sm md:text-base font-semibold">
+                  Aproxime a pulseira
                 </p>
               </div>
 
               {!isScanning ? (
                 <button
                   onClick={startNFCScan}
-                  className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-black py-6 px-8 rounded-xl transition-all duration-300 text-xl shadow-lg transform hover:scale-105 hover:shadow-2xl"
+                  className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-black py-4 md:py-5 px-6 rounded-xl transition-all duration-300 text-lg md:text-xl shadow-lg transform hover:scale-105"
                 >
-                  <span className="flex items-center justify-center gap-3">
-                    📡 Ativar Leitor NFC
+                  <span className="flex items-center justify-center gap-2">
+                    📡 ATIVAR NFC
                   </span>
                 </button>
               ) : (
-                <div className="space-y-4">
-                  <div className="bg-gradient-to-r from-purple-100 to-pink-100 border-2 border-purple-300 rounded-xl p-6 text-center">
-                    <div className="animate-spin inline-block w-12 h-12 border-4 border-purple-600 border-t-transparent rounded-full mb-3"></div>
-                    <p className="text-lg font-bold text-purple-900">{nfcMessage}</p>
+                <div className="space-y-3">
+                  <div className="bg-purple-100 border-2 border-purple-400 rounded-lg p-4 text-center">
+                    <div className="animate-spin inline-block w-10 h-10 border-4 border-purple-600 border-t-transparent rounded-full mb-2"></div>
+                    <p className="text-base md:text-lg font-bold text-purple-900">{nfcMessage}</p>
                   </div>
                   <button
                     onClick={stopNFCScan}
-                    className="w-full bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-xl transition duration-200"
+                    className="w-full bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 rounded-lg transition duration-200"
                   >
                     Cancelar
                   </button>
@@ -181,7 +164,7 @@ export default function Home() {
               )}
 
               {nfcMessage && !isScanning && (
-                <div className={`mt-4 p-4 rounded-xl text-center font-bold ${
+                <div className={`mt-3 p-3 rounded-lg text-center font-bold text-sm md:text-base ${
                   nfcMessage.includes('✅') ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
                 }`}>
                   {nfcMessage}
