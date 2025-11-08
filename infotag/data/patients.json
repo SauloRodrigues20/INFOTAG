@@ -1,0 +1,262 @@
+{
+  "PAC001": {
+    "id": "PAC001",
+    "personalInfo": {
+      "name": "João Silva",
+      "birthDate": "1985-05-15",
+      "age": 39,
+      "gender": "Masculino",
+      "cpf": "123.456.789-00",
+      "photo": "https://i.pravatar.cc/150?img=12"
+    },
+    "medicalInfo": {
+      "bloodType": "O+",
+      "height": "1.75m",
+      "weight": "80kg",
+      "organDonor": true
+    },
+    "allergies": [
+      {
+        "name": "Penicilina",
+        "severity": "Alta",
+        "reaction": "Anafilaxia"
+      },
+      {
+        "name": "Pólen",
+        "severity": "Média",
+        "reaction": "Rinite alérgica"
+      }
+    ],
+    "medications": [
+      {
+        "name": "Losartana 50mg",
+        "dosage": "1 comprimido",
+        "frequency": "1x ao dia",
+        "time": "Manhã"
+      },
+      {
+        "name": "Sinvastatina 20mg",
+        "dosage": "1 comprimido",
+        "frequency": "1x ao dia",
+        "time": "Noite"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Hipertensão Arterial",
+        "since": "2015",
+        "status": "Controlada"
+      },
+      {
+        "name": "Diabetes Tipo 2",
+        "since": "2018",
+        "status": "Controlada"
+      }
+    ],
+    "emergencyContacts": [
+      {
+        "name": "Maria Silva (Esposa)",
+        "relationship": "Cônjuge",
+        "phone": "(11) 98765-4321",
+        "priority": 1
+      },
+      {
+        "name": "Pedro Silva (Filho)",
+        "relationship": "Filho",
+        "phone": "(11) 97654-3210",
+        "priority": 2
+      }
+    ],
+    "medicalHistory": [
+      {
+        "date": "2020-03-15",
+        "description": "Cirurgia de Apendicite",
+        "hospital": "Hospital São Paulo"
+      },
+      {
+        "date": "2019-11-20",
+        "description": "Fratura de Braço Direito",
+        "hospital": "Pronto Socorro Central"
+      }
+    ],
+    "observations": "Paciente diabético, manter jejum prolongado pode causar hipoglicemia. Sempre verificar glicemia antes de procedimentos.",
+    "lastUpdate": "2025-11-08"
+  },
+  "PAC002": {
+    "id": "PAC002",
+    "personalInfo": {
+      "name": "Maria Santos",
+      "birthDate": "1992-08-22",
+      "age": 33,
+      "gender": "Feminino",
+      "cpf": "987.654.321-00",
+      "photo": "https://i.pravatar.cc/150?img=5"
+    },
+    "medicalInfo": {
+      "bloodType": "A-",
+      "height": "1.65m",
+      "weight": "62kg",
+      "organDonor": true
+    },
+    "allergies": [
+      {
+        "name": "Dipirona",
+        "severity": "Alta",
+        "reaction": "Choque anafilático"
+      },
+      {
+        "name": "Látex",
+        "severity": "Média",
+        "reaction": "Urticária"
+      },
+      {
+        "name": "Frutos do Mar",
+        "severity": "Alta",
+        "reaction": "Edema de glote"
+      }
+    ],
+    "medications": [
+      {
+        "name": "Levotiroxina 100mcg",
+        "dosage": "1 comprimido",
+        "frequency": "1x ao dia",
+        "time": "Em jejum"
+      },
+      {
+        "name": "Anticoncepcional",
+        "dosage": "1 comprimido",
+        "frequency": "1x ao dia",
+        "time": "Noite"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Hipotireoidismo",
+        "since": "2015",
+        "status": "Controlada"
+      },
+      {
+        "name": "Asma",
+        "since": "Infância",
+        "status": "Controlada"
+      }
+    ],
+    "emergencyContacts": [
+      {
+        "name": "Carlos Santos (Pai)",
+        "relationship": "Pai",
+        "phone": "(11) 99876-5432",
+        "priority": 1
+      },
+      {
+        "name": "Ana Santos (Mãe)",
+        "relationship": "Mãe",
+        "phone": "(11) 99765-4321",
+        "priority": 2
+      }
+    ],
+    "medicalHistory": [
+      {
+        "date": "2021-06-10",
+        "description": "Parto Cesárea",
+        "hospital": "Maternidade Santa Maria"
+      },
+      {
+        "date": "2018-02-15",
+        "description": "Reação alérgica grave a Dipirona",
+        "hospital": "Hospital de Emergência"
+      }
+    ],
+    "observations": "ATENÇÃO: Nunca administrar Dipirona! Histórico de choque anafilático. Usar luvas sem látex.",
+    "lastUpdate": "2025-11-08"
+  },
+  "PAC003": {
+    "id": "PAC003",
+    "personalInfo": {
+      "name": "Pedro Oliveira",
+      "birthDate": "1978-12-03",
+      "age": 46,
+      "gender": "Masculino",
+      "cpf": "456.789.123-00",
+      "photo": "https://i.pravatar.cc/150?img=33"
+    },
+    "medicalInfo": {
+      "bloodType": "AB+",
+      "height": "1.82m",
+      "weight": "95kg",
+      "organDonor": false
+    },
+    "allergies": [
+      {
+        "name": "AAS (Ácido Acetilsalicílico)",
+        "severity": "Média",
+        "reaction": "Broncoespasmo"
+      }
+    ],
+    "medications": [
+      {
+        "name": "Warfarina 5mg",
+        "dosage": "1 comprimido",
+        "frequency": "1x ao dia",
+        "time": "18h"
+      },
+      {
+        "name": "Metoprolol 50mg",
+        "dosage": "1 comprimido",
+        "frequency": "2x ao dia",
+        "time": "Manhã e Noite"
+      },
+      {
+        "name": "Atorvastatina 40mg",
+        "dosage": "1 comprimido",
+        "frequency": "1x ao dia",
+        "time": "Noite"
+      }
+    ],
+    "conditions": [
+      {
+        "name": "Fibrilação Atrial",
+        "since": "2020",
+        "status": "Em tratamento"
+      },
+      {
+        "name": "Doença Coronariana",
+        "since": "2019",
+        "status": "Em tratamento"
+      },
+      {
+        "name": "Hipercolesterolemia",
+        "since": "2017",
+        "status": "Controlada"
+      }
+    ],
+    "emergencyContacts": [
+      {
+        "name": "Dra. Carla Mendes (Cardiologista)",
+        "relationship": "Médica",
+        "phone": "(11) 3456-7890",
+        "priority": 1
+      },
+      {
+        "name": "Lucia Oliveira (Esposa)",
+        "relationship": "Cônjuge",
+        "phone": "(11) 98888-7777",
+        "priority": 2
+      }
+    ],
+    "medicalHistory": [
+      {
+        "date": "2021-09-05",
+        "description": "Angioplastia com colocação de 2 stents",
+        "hospital": "Instituto do Coração"
+      },
+      {
+        "date": "2019-07-12",
+        "description": "Infarto Agudo do Miocárdio",
+        "hospital": "Hospital Cardiológico"
+      }
+    ],
+    "observations": "PACIENTE ANTICOAGULADO! Usa Warfarina. Risco aumentado de sangramento. Sempre avaliar INR antes de procedimentos invasivos. Possui histórico de infarto.",
+    "lastUpdate": "2025-11-08"
+  }
+}
